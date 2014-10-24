@@ -1,3 +1,5 @@
+#v1
+
 def factorial(x)
   if x == 0
     return 1
@@ -6,5 +8,16 @@ def factorial(x)
   end
 end
 
+puts '# to factorialize'
+puts factorial(gets.chomp.to_i)
+
+#v2
+def factorial(n)
+  result = 1
+for i in 1..n do
+  result = result * i
+end
+return result
+end
 puts '# to factorialize'
 puts factorial(gets.chomp.to_i)

@@ -21,3 +21,15 @@ return result
 end
 puts '# to factorialize'
 puts factorial(gets.chomp.to_i)
+
+#v3
+def factorial(n)
+  x = 1
+  until n == 0
+    x *= n
+    n -= 1
+  end
+ x
+end
+puts '# to factorialize'
+puts factorial(gets.chomp.to_i)
